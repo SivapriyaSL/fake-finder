@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>Company Website</title>
+ <link rel="stylesheet" type="text/css" href="static/style.css">
+ <script type="text/javascript" src="script.js"></script>
+ {% block head %}{% endblock %}
+</head>
+<body>
+ <header>
+  <img src="static/images/companylogo.png" alt="Company Logo" id = "company">
+  <nav>
+   <ul>
+    <li><a href="\">Home</a></li>
+    <li><a href="\instagram">Instagram</a></li>
+    <li><a href="\facebook">Facebook</a></li>
+    <li><a href="\twitter">Twitter</a></li>
+    <li><a href="\fakenews">Fake News</a></li>
+    <li><a href="\about">About</a></li>
+   </ul>
+  </nav>
+ </header>
+<main>
+    {% block body %}{% endblock %}
+ 
+ </main>
+</body>
+</html>

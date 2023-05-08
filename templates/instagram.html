@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Instagram</title>
+{% endblock %}
+
+{% block body %}
+<form action="/instagram" method="POST" enctype="multipart/form-data">
+    <input type="text" placeholder="Enter Content" name="content">
+    <button type="submit">Test</button>
+</form>
+{%if auth %}
+<div class="container">
+    <button>{{auth}} user</button>
+</div>
+{% endif %}
+
+{% endblock %}

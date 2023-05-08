@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block head %}
+<title>Home</title>
+{% endblock %}
+
+{% block body %}
+
+<div id="typing-text">Select the category in which you want to detect Fake or Not.</div>
+  <div class="container">
+    
+   <button onclick="goToPage('https://twitter.com')">Twitter</button>
+   <button onclick="goToPage('https://www.facebook.com')">Facebook</button>
+   <button onclick="goToPage('https://www.instagram.com')">Instagram</button>
+   <button onclick="goToPage('https://www.snopes.com')">Fake News</button>
+  </div>
+ 
+{% endblock %}
